@@ -127,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="example.h" />
+    <ClInclude Include="include\example.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="example.cc" />
-    <ClCompile Include="examplemain.cc" />
+    <ClCompile Include="src\example.cc" />
+    <ClCompile Include="src\examplemain.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

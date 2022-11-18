@@ -1,7 +1,8 @@
 #pragma once  //pragma once is necessary for <!every!> header file to avoid redefination
 
 #include <unordered_set>
-// Minimize reference to aother header files
+// Minimize reference to aother header files.
+// If a header file isn't used in declaration but will be used in implementation, include them in a cc file
 
 
 //DO NOT use any namespace here to avoid namespace conflict
@@ -47,11 +48,12 @@ private: //Write your own methods
 *----------------------------------------------Key points---------------------------------
 * 
 * 1. Start your header file with '#pragma once'. This macro must be polaced in the first line of any header file ...... -line 1
-* 2. Section sequence: Start with public section, then protected, then private......................................... -line 9: 22, 27
-* 3. Methods should be UpperCamelCase, and your own type should be UpperCamelCase too ................................. -line 14
-* 4. Variables in a class should end with underscore .................................................................. -line 34
+* 2. DO NOT implement any functions in a header file
+* 3. Section sequence: Start with public section, then protected, then private......................................... -line 9: 22, 27
+* 4. Methods should be UpperCamelCase, and your own type should be UpperCamelCase too ................................. -line 14
+* 5. Variables in a class should end with underscore .................................................................. -line 34
 * 
-* 5. DO NOT USE ANY NAPESPACE IN ANY HEADER FILE!!!!!
+* 6. DO NOT USE ANY NAPESPACE IN ANY HEADER FILE!!!!!
 * 
 * reference:https://google.github.io/styleguide/cppguide.html#Classes
 */
