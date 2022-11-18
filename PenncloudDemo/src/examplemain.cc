@@ -9,6 +9,8 @@ int main(int argc, char** argv) {
 	while (true) {
 		table.Listen();
 		table.Respond();
+		//do something............
+
 	}
 	table.ClearResource();
 
@@ -20,6 +22,7 @@ int main(int argc, char** argv) {
 	BigTable table;
 	table.ParseArgs(argc, argv);
 	table.run();
+	//do something........
 
 	return 0;
 }
